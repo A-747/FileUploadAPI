@@ -56,7 +56,7 @@ namespace FileUploadAPI.Controllers
                     //{
                     //    //filestream.WriteByte(i);
                     //}
-                    Stream file = uploadFile.OpenWrite(pathString);
+                    //Stream file = uploadFile.OpenWrite(pathString);
                     filestream.Write(bytesContentForFile, 0, bytesContentForFile.Length);
                 }
             }
