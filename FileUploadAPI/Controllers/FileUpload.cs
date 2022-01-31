@@ -52,12 +52,7 @@ namespace FileUploadAPI.Controllers
             if (!System.IO.File.Exists(pathString))
             {
                 {
-                    //for (byte i = 0; i < 100; i++)
-                    //{
-                    //    //filestream.WriteByte(i);
-                    //}
-                    //Stream file = uploadFile.OpenWrite(pathString);
-                    filestream.Write(bytesContentForFile, 0, bytesContentForFile.Length);
+                    System.IO.File.WriteAllBytes(pathString, bytesContentForFile);
                 }
             }
             else
